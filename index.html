@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Validation 2</title>
+    <link rel="stylesheet" href="/regex.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h2>Registration</h2>
+            
+            <label>First Name</label>
+            <input type="text" id="firstName" maxlength="16" placeholder="Enter First Name">
+            <p class="error" id="firstNameError" >Enter your First Name correctly</p>
+            
+            <label>Last Name</label>
+            <input type="text" id="lastName" maxlength="6" placeholder="Enter Last Name">
+            <p class="error" id="lastNameError" >Enter your Last Name correctly</p>
+           
+            <label>Mobile Number</label>
+            <input type="tel" id="mobileNumber" maxlength="10" placeholder="Enter your Mobile Number">
+            <p class="error" id="mobileNumberError" >Enter your Mobile Number correctly</p>
+            
+            <label>Email id</label>
+            <input type="email" id="emailid" placeholder="Enter Email id">
+            <p class="error" id="emailidError" >Enter your Email id correctly</p>
+           
+            <div class="Gender">
+                <label class="gen">Gender</label>
+                <label class="g1">Male</label>
+                <input type="radio" name="gender" value="Male">
+                <label class="g2">Female</label>
+                <input type="radio" name="gender" value="Female">
+                <p class="error" id="genderError" >Select your Gender</p>
+            </div>
+           
+            <label>Date of Birth</label>
+            <input type="date">
+
+            <label>Aadhaar Number</label>
+            <input type="text1" id="aadhaarNumber" maxlength="12" placeholder="Enter your Aadhaar Number">
+            <p class="error" id="aadhaarNumberError" >Enter your Aadhaar Number correctly</p>
+           
+            <label>Address</label>
+            <input type="text2" id="address"  placeholder="Enter Address">
+            <p class="error" id="addressError" >Enter your Address correctly</p>
+           
+            <label>Resume</label>
+            <input type="file" id="resume">
+            
+            <label>Qualification</label>
+            <input type="text3" id="qualification" maxlength="16" placeholder="Enter your Qualification">
+            <p class="error" id="qualificationError" >Enter your Qualification correctly</p>
+            
+            <div class="submit">
+                <button class="btn1" type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/regex.js"></script>
+</body>
+</html>
